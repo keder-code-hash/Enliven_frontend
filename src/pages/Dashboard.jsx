@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import BaseLandPage from '../components/LandPage/BaseLandPage'
+import BaseLandPageComponent from '../components/LandPage/BaseLandPageComponent'
 
 class Dashboard extends Component {
     state = {  } 
     render() { 
-        return (<BaseLandPage/>);
+        return (<BaseLandPageComponent/>);
     }
 }
  

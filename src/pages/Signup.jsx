@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import Register from '../components/User/Register';
+import RegisterComponent from '../components/User/RegisterComponent';
 
 class Signup extends Component {
     state = {  } 
     render() { 
-        return (<Register/>);
+        return (<RegisterComponent/>);
     }
 }
  

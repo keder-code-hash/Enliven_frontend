@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 
-class BaseLandPage extends Component {
+class BaseLandPageComponent extends Component {
     state = {  } 
     render() { 
-        return (<h4>BaseLandPage</h4>);
+        return (
+            <React.Component>
+                <h4 class="display-4">BaseLandPage</h4>
+            </React.Component>
+        );
     }
 }
  
-export default BaseLandPage;
+export default BaseLandPageComponent;

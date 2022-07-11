@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 
-class LogOut extends Component {
+class LogOutComponent extends Component {
     state = {  } 
     render() { 
         return (<h4>Logout</h4>);
     }
 }
  
-export default LogOut;
+export default LogOutComponent;

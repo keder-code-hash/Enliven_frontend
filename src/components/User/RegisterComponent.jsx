@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class Register extends Component {
+class RegisterComponent extends Component {
     state = {  } 
     render() { 
         return (<h4>Register</h4>);
     }
 }
  
-export default Register;
+export default RegisterComponent;
