@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 .App {
   text-align: center;
+  background-color: #FDFDFD !important;
+  color: #1E2A39 !important;
 }
 
 .App-logo {
@@ -43,3 +47,22 @@
 /************************************/
 
 
+/************ Home Page *************/
+#title {
+  font-size: 100px !important;
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+  top: 200px;
+}
+
+#subtitle {
+  font-size: 20px;
+  position: relative;
+  top: 200px;
+
+  width: 400px;
+}
+
+.background {
+  padding: 0 !important;
+}
