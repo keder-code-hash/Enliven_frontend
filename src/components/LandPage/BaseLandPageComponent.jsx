@@ -5,22 +5,6 @@ class BaseLandPageComponent extends Component {
     render() { 
         return (
             <React.Fragment>
-                <div className="preloader">
-                    <div className="loader_34">
-                        <div className="ytp-spinner">
-                            <div className="ytp-spinner-container">
-                                <div className="ytp-spinner-rotator">
-                                    <div className="ytp-spinner-left">
-                                        <div className="ytp-spinner-circle"></div>
-                                    </div>
-                                    <div className="ytp-spinner-right">
-                                        <div className="ytp-spinner-circle"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div className='row' style={{position: "relative",
   top:"15vh"}}>
                      <div className='col-sm-1'></div>
@@ -28,13 +12,27 @@ class BaseLandPageComponent extends Component {
                         <img id="logo" src={process.env.PUBLIC_URL + 'assets/images/logo/enliven_logo.gif'} alt="enliven logo"/>
                         <br/>
                         <br/>
-                        <div className='text-center h4 text-white'>
-                            We believe <b>Education is Must to All</b>
+                        <div className='text-center h4 text-white' id="intro">
+                            <p>Tired of checking answer sheets manually?<br/>Go effortless with <b>enliven</b></p>
                         </div>
                     </div>
                     <div className='col-sm-6'>
-                        
+                        <img id="landing_image" src={process.env.PUBLIC_URL + "assets/images/Online test rmbg.gif"} alt="landing" width="700vw"/>
                     </div>
+                </div>
+                
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+                <div className="container" id="about-enliven">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi necessitatibus neque obcaecati optio ducimus vitae culpa ipsum illum similique asperiores labore, inventore velit molestias corrupti perferendis aspernatur eius molestiae nobis.
                 </div>
             </React.Fragment>
         );
