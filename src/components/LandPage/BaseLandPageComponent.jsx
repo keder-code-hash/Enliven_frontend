@@ -21,8 +21,21 @@ class BaseLandPageComponent extends Component {
                         </div>
                     </div>
                 </div>
-
-                <img id="logo" src={process.env.PUBLIC_URL + 'assets/images/logo/enliven_logo.gif'} alt="enliven logo"/>
+                <div className='row' style={{position: "relative",
+  top:"15vh"}}>
+                     <div className='col-sm-1'></div>
+                    <div className='col-sm-5'>
+                        <img id="logo" src={process.env.PUBLIC_URL + 'assets/images/logo/enliven_logo.gif'} alt="enliven logo"/>
+                        <br/>
+                        <br/>
+                        <div className='text-center h4 text-white'>
+                            We believe <b>Education is Must to All</b>
+                        </div>
+                    </div>
+                    <div className='col-sm-6'>
+                        
+                    </div>
+                </div>
             </React.Fragment>
         );
     }

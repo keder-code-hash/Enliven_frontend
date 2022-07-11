@@ -66,3 +66,8 @@
 .background {
   padding: 0 !important;
 }
+
+#logo{
+  object-fit: cover;
+  width: 20rem;
+}

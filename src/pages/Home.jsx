@@ -10,12 +10,15 @@ class Home extends Component {
             <React.Fragment>
                 <NavbarComponent/>
                 <div className="background" style={{
-                    backgroundImage: `url(${process.env.PUBLIC_URL + 'assets/images/background/background3_svg.svg'})`,
-                    aspectRatio: 900 / 450,
+                    backgroundImage: `url(${process.env.PUBLIC_URL + 'assets/images/background/bg2.png'})`,
+                    aspectRatio: 960 / 540,
+                    height: '100%',
                     width: '100%',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
-                    backgroundSize: 'cover'
+                    backgroundSize: 'cover',
+                    position: 'absolute',
+                    top: '15vh'
                 }}>
                     <div className="container-fluid">
                         <BaseLandPageComponent/>
