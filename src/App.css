@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 .App {
   text-align: center;
+  background-color: #FDFDFD !important;
+  color: #1E2A39 !important;
 }
 
 .App-logo {
@@ -42,4 +46,62 @@
 /************ Custom CSS ************/
 /************************************/
 
+/* Important Color:
+    #2026d2
+    #f1f5fa
+*/
 
+/************ Home Page *************/
+#title {
+  font-size: 100px !important;
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+  top: 200px;
+}
+
+#subtitle {
+  font-size: 20px;
+  position: relative;
+  top: 200px;
+
+  width: 400px;
+}
+
+.background {
+  padding: 0 !important;
+}
+
+#logo{
+  object-fit: cover;
+  width: 20rem;
+}
+
+#intro {
+  margin-bottom: 100px;
+}
+
+#landing_image {
+  margin-top: -50px;
+  object-fit: cover;
+  width: 45vw;
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  #landing_image {
+    width: 70vw;
+    margin-left: 3rem;
+  }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+  #landing_image {
+    width: 69vw;
+    margin-left: 3rem;
+  }
+
+}
