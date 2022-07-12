@@ -81,11 +81,3 @@
   object-fit: cover;
   width: 45vw;
 }
-
-#about-enliven {
-  margin: 10px;
-  margin-top: 20px;
-  margin-left: 100px;
-  padding: 20px;
-  width: 700px !important;
-}
