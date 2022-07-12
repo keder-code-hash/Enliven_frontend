@@ -46,6 +46,10 @@
 /************ Custom CSS ************/
 /************************************/
 
+/* Important Color:
+    #2026d2
+    #f1f5fa
+*/
 
 /************ Home Page *************/
 #title {
@@ -80,4 +84,24 @@
   margin-top: -50px;
   object-fit: cover;
   width: 45vw;
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  #landing_image {
+    width: 70vw;
+    margin-left: 3rem;
+  }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+  #landing_image {
+    width: 69vw;
+    margin-left: 3rem;
+  }
+
 }
