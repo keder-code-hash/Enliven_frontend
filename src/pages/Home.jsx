@@ -1,28 +1,37 @@
 import React, { Component } from 'react';
 
-import BaseLandPageComponent from '../components/LandPage/BaseLandPageComponent'
-import NavbarComponent from "../components/Utils/NavbarComponent"
-
 class Home extends Component {
     state = {  } 
     render() { 
         return (
             <React.Fragment>
-                <NavbarComponent/>
-                <div className="background" style={{
-                    backgroundImage: `url(${process.env.PUBLIC_URL + 'assets/images/background/bg2.png'})`,
-                    aspectRatio: 960 / 540,
-                    height: '100%',
-                    width: '100%',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    position: 'absolute',
-                    top: '15vh'
-                }}>
-                    <div className="container-fluid">
-                        <BaseLandPageComponent/>
+                <div className='row'>
+                    <div className='col-sm-1'></div>
+                    <div className='col-sm-5'>
+                        <img id="logo" src={process.env.PUBLIC_URL + 'assets/images/logo/enliven_logo.gif'} alt="enliven logo"/>
+                        <br/>
+                        <br/>
+                        <div className='text-center h4 text-white' id="intro">
+                            <p>Tired of checking answer sheets manually?<br/>Go effortless with <b>enliven</b></p>
+                        </div>
                     </div>
+                    <div className='col-sm-6'>
+                        <img id="landing_image" src={process.env.PUBLIC_URL + "assets/images/Online test rmbg.gif"} alt="landing" width="700vw"/>
+                    </div>
+                </div>
+                
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+                <div className="container" id="about-enliven">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi necessitatibus neque obcaecati optio ducimus vitae culpa ipsum illum similique asperiores labore, inventore velit molestias corrupti perferendis aspernatur eius molestiae nobis.
                 </div>
             </React.Fragment>
         );
