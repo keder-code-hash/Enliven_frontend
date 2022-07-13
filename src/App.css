@@ -166,21 +166,9 @@ input[type=radio] {
   -o-appearance: radio !important;
   -ms-appearance: radio !important; }
 
-img {
-  max-width: 100%;
-  height: auto; }
-
 figure {
   margin: 0; }
 
-h2 {
-  line-height: 1.66;
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  color: #222;
-  font-family: Poppins;
-  font-size: 36px; }
 
 .main {
   background: #f8f8f8;
@@ -264,7 +252,7 @@ figure {
 
 .form-submit {
   display: inline-block;
-  background: #6dabe4;
+  background: #2026d2;
   color: #fff;
   border-bottom: none;
   width: auto;
@@ -277,7 +265,7 @@ figure {
   margin-top: 25px;
   cursor: pointer; }
   .form-submit:hover {
-    background: #4292dc; }
+    background: #4046ef; }
 
 #signin {
   margin-top: 16px; }

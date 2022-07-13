@@ -26,13 +26,13 @@ class Home extends Component {
                 <br/>
 
                 <div className="container" id="about-enliven">
+                    <h2>What is Enliven?</h2>
                     <p>
-                        <h2>What is Enliven?</h2>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi necessitatibus neque obcaecati optio ducimus vitae culpa ipsum illum similique asperiores labore, inventore velit molestias corrupti perferendis aspernatur eius molestiae nobis.
                     </p>
 
+                    <h2>What is Enliven?</h2>
                     <p>
-                        <h2>What is Enliven?</h2>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi necessitatibus neque obcaecati optio ducimus vitae culpa ipsum illum similique asperiores labore, inventore velit molestias corrupti perferendis aspernatur eius molestiae nobis.
                     </p>
 
