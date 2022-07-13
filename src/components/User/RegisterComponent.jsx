@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../../css/login-register.css'
 
 class RegisterComponent extends Component {
     state = {  } 
@@ -37,8 +38,8 @@ class RegisterComponent extends Component {
                                 </form>
                             </div>
                             <div className="signup-image">
-                                <figure><img src={process.env.PUBLIC_URL + "assets/images/signup-image.jpg"} alt="sing up image"/></figure>
-                                <a href="#" className="signup-image-link">I am already member</a>
+                                <figure><img src={process.env.PUBLIC_URL + "assets/images/signup-image.jpg"} alt="sign up"/></figure>
+                                <a href="#" className="signup-image-link">I am already a member</a>
                             </div>
                         </div>
                     </div>

@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Testing from './pages/Testing';
 import Dashboard from './pages/Dashboard';
 import Notfound from './pages/Notfound';
 
@@ -33,6 +34,11 @@ function App() {
       component = <Dashboard/>
       break;
 
+    case '/testing':
+      imgSrc = "assets/images/background/background.png";
+      component = <Testing/>
+      break;
+
     default:
       component = <Notfound/>
       break;
@@ -53,7 +59,7 @@ function App() {
       }}>
         <div className="container-fluid" style={{
           position: "relative",
-          top:"15vh"
+          top: "15vh",
         }}>
           {component}
         </div>

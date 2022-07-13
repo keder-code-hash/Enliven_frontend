@@ -9,7 +9,7 @@ class LoginComponent extends Component {
                     <div className="customcontainer">
                         <div className="signin-content">
                             <div className="signin-image">
-                                <figure><img src={process.env.PUBLIC_URL + "assets/images/signin-image.jpg"} alt="sing up image"/></figure>
+                                <figure><img src={process.env.PUBLIC_URL + "assets/images/signin-image.jpg"} alt="sign up"/></figure>
                                 <a href="#" className="signup-image-link">Create an account</a>
                             </div>
 
