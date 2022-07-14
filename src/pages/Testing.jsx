@@ -11,19 +11,28 @@ class Testing extends Component {
                 <div className="container" style={{height: "100vh"}}>
                     <Form
                         left="false"
-                        imglink="assets/images/exam_vector.png"
+                        imglink=""
                         imgHeight="250px"
                         subComponent={this.subComponent}
                         title="Testing"
                         endpoint="/"
+                        formid="testing-form"
                     >
-                        <div className="form-group">
-                            <label for="your_name"><i className="zmdi zmdi-account material-icons-name"></i></label>
-                            <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                        <div className="form-group row">
+                            <div className="col-sm-6">
+                                <label for="testing_question"></label>
+                                <input type="text" name="testing_question" id="testing_question" placeholder="Question"/>
+                            </div>
+                            <div className="col-sm-6">
+                                <label for="testing_marks"></label>
+                                <input type="text" name="testing_marks" id="testing_marks" placeholder="Marks"/>
+                            </div>
                         </div>
                         <div className="form-group">
-                            <label for="your_name"><i className="zmdi zmdi-account material-icons-name"></i></label>
-                            <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                            <label for="testing_standard_answer"></label>
+                            <input type="text" name="testing_standard_answer" id="testing_standard_answer" placeholder="Standard Answer"/>
+                            <label for="testing_student_answer"></label>
+                            <input type="text" name="testing_student_answer" id="testing_student_answer" placeholder="Student Answer"/>
                         </div>
                         <div className="form-group form-button">
                             <input type="submit" name="signin" id="signin" className="form-submit" value="Submit"/>

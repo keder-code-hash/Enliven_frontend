@@ -15,6 +15,7 @@ class RegisterComponent extends Component {
                     subComponent= {this.subComponent}
                     title="Sign up"
                     endpoint="/"
+                    formid="register-form"
                 >
                     <div className="form-group">
                         <label for="name"><i className="zmdi zmdi-account material-icons-name"></i></label>

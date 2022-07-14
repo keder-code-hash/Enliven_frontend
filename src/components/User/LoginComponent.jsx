@@ -15,6 +15,7 @@ class LoginComponent extends Component {
                         subComponent={this.subComponent}
                         title="Login"
                         endpoint="/"
+                        formid="login-form"
                     >
                         <div className="form-group">
                             <label for="your_name"><i className="zmdi zmdi-account material-icons-name"></i></label>

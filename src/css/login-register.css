@@ -120,7 +120,7 @@ display-flex, .display-flex, .display-flex-center, .form-content, .social-login,
   .signup {
     margin-bottom: 150px; }
   
-  .signup-form, .signup-image, .signin-form, .signin-image {
+  .signup-form, .signup-image, .form-body, .form-image {
     width: 50%;
     overflow: hidden; }
   
@@ -371,11 +371,11 @@ display-flex, .display-flex, .display-flex-center, .form-content, .social-login,
   .zmdi-google {
     background: #e72734; }
   
-  .signin-form {
+  .form-body {
     margin-right: 90px;
     margin-left: 80px; }
   
-  .signin-image {
+  .form-image {
     margin-left: 110px;
     margin-right: 20px;
     margin-top: 10px; }
@@ -407,7 +407,7 @@ display-flex, .display-flex, .display-flex-center, .form-content, .social-login,
       /* box-sizing: border-box; */
       padding: 0 30px; }
   
-    .signin-image {
+    .form-image {
       margin-left: 0px;
       margin-right: 0px;
       margin-top: 50px;
@@ -417,7 +417,7 @@ display-flex, .display-flex, .display-flex-center, .form-content, .social-login,
       -o-order: 2;
       -ms-order: 2; }
   
-    .signup-form, .signup-image, .signin-form, .signin-image {
+    .signup-form, .signup-image, .form-body, .form-image {
       width: auto; }
   
     .social-login {
@@ -430,7 +430,7 @@ display-flex, .display-flex, .display-flex-center, .form-content, .social-login,
     .form-button {
       text-align: center; }
   
-    .signin-form {
+    .form-body {
       order: 1;
       -moz-order: 1;
       -webkit-order: 1;
