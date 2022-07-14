@@ -1,5 +1,5 @@
 /* @extend display-flex; */
-display-flex, .display-flex, .display-flex-center, .signup-content, .signin-content, .social-login, .socials {
+display-flex, .display-flex, .display-flex-center, .form-content, .social-login, .socials {
     display: flex;
     display: -webkit-flex; }
   
@@ -119,9 +119,6 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
   
   .signup {
     margin-bottom: 150px; }
-  
-  .signup-content {
-    padding: 75px 0; }
   
   .signup-form, .signup-image, .signin-form, .signin-image {
     width: 50%;
@@ -318,7 +315,7 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
   .material-icons-name {
     font-size: 18px; }
   
-  .signin-content {
+  .form-content {
     padding-top: 67px;
     padding-bottom: 87px; }
   
@@ -391,7 +388,7 @@ display-flex, .display-flex, .display-flex-center, .signup-content, .signin-cont
     .customcontainer {
       max-width: 1200px; } }
   @media screen and (max-width: 768px) {
-    .signup-content, .signin-content {
+      .form-content {
       flex-direction: column;
       -moz-flex-direction: column;
       -webkit-flex-direction: column;
