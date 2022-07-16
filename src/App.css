@@ -86,12 +86,26 @@
   width: 45vw;
 }
 
+#edu-for-all {
+  width: 40vw;
+}
+
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
   #landing_image {
-    width: 70vw;
+    width: 40vw;
     margin-left: 3rem;
+  }
+  
+  #edu-for-all {
+    width: 60vw;
+  }
+
+  #logo{
+    object-fit: cover;
+    width: 20rem;
   }
 
 }
@@ -104,4 +118,14 @@
     margin-left: 3rem;
   }
 
+  #edu-for-all {
+    width: 80vw;
+  }
+
+  #logo{
+    object-fit: cover;
+    width: 16rem;
+  }
+
 }
+
