@@ -9,7 +9,6 @@ class LoginComponent extends Component {
             <React.Fragment>
                 <section className="sign-in">
                     <Form
-                        left="true"
                         imglink="assets/images/signin-image.jpg"
                         imgHeight="250px"
                         subComponent={this.subComponent}

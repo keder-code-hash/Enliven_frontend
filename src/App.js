@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Testing from './pages/Testing';
 import Dashboard from './pages/Dashboard';
+import About from './pages/About';
 import Notfound from './pages/Notfound';
 
 import Header from './components/Utils/Header';
@@ -35,8 +36,12 @@ function App() {
       break;
 
     case '/testing':
-      imgSrc = "assets/images/background/background.png";
       component = <Testing/>
+      break;
+
+    case '/about':
+      component = <About/>
+      imgSrc = "assets/images/background/background.png";
       break;
 
     default:

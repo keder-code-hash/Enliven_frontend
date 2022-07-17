@@ -9,7 +9,6 @@ class RegisterComponent extends Component {
             <React.Fragment>
                 <section className="signup">
                 <Form
-                    left="false"
                     imglink="assets/images/signup-image.jpg"
                     imgHeight="250px"
                     subComponent= {this.subComponent}

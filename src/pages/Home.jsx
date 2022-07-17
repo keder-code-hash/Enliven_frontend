@@ -8,15 +8,15 @@ class Home extends Component {
             <React.Fragment>
                 <div className='row' style={{height:"75vh"}}>
                     <div className='col-sm-1'></div>
-                    <div className='col-sm-5'>
-                        <div className="row">
-                            <img id="logo" src={process.env.PUBLIC_URL + 'assets/images/logo/enliven_logo.gif'} alt="enliven logo"/>
-                            <br/>
-                            <br/>
-                            <div className='text-center h4 text-white' id="intro">
-                                Tired of checking answer sheets manually? <br/>Go effortless with <b>enliven</b><br/><br/>
-                                <button class="get-started">Get Started</button>
-                            </div>
+                    <div className='col-sm-5 text-center'>
+                        <img id="logo" src={process.env.PUBLIC_URL + 'assets/images/logo/enliven_logo.gif'} alt="enliven logo"/>
+                        <br/>
+                        <br/>
+                        <div className='text-center h4 text-white' id="intro">
+                            <p>
+                            Tired of checking answer sheets manually? <br/>Go effortless with <b>enliven</b><br/><br/>
+                            <button class="get-started">Get Started</button>
+                            </p>
                         </div>
                     </div>
                     <div className='col-sm-6'>

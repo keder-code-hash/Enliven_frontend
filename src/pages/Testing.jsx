@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Form from '../components/Utils/Form'
 
 class Testing extends Component {
     state = {}
@@ -8,36 +7,41 @@ class Testing extends Component {
 
         return(
             <React.Fragment>
-                <div className="container" style={{height: "100vh"}}>
-                    <Form
-                        left="false"
-                        imglink=""
-                        imgHeight="250px"
-                        subComponent={this.subComponent}
-                        title="Testing"
-                        endpoint="/"
-                        formid="testing-form"
-                    >
-                        <div className="form-group row">
-                            <div className="col-sm-6">
-                                <label for="testing_question"></label>
-                                <input type="text" name="testing_question" id="testing_question" placeholder="Question"/>
-                            </div>
-                            <div className="col-sm-6">
-                                <label for="testing_marks"></label>
-                                <input type="text" name="testing_marks" id="testing_marks" placeholder="Marks"/>
+                <div className="container" style={{height: "69vh"}}>
+                <h2>General Testing</h2><br/><br/>
+                <form method="POST" action="/testing/query">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <b>Question</b>
+                                <input type="text" class="form-control" id="question" name="question"/>
                             </div>
                         </div>
-                        <div className="form-group">
-                            <label for="testing_standard_answer"></label>
-                            <input type="text" name="testing_standard_answer" id="testing_standard_answer" placeholder="Standard Answer"/>
-                            <label for="testing_student_answer"></label>
-                            <input type="text" name="testing_student_answer" id="testing_student_answer" placeholder="Student Answer"/>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <b>Marks</b>
+                                <input type="number" class="form-control" id="Marks" name="marks"/>
+                            </div>
                         </div>
-                        <div className="form-group form-button">
-                            <input type="submit" name="signin" id="signin" className="form-submit" value="Submit"/>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <b>Standard Answer</b>
+                                <textarea class="form-control" id="sdanswer" name="sdanswer"></textarea>
+                            </div>
                         </div>
-                    </Form>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <b>Student Answer</b>
+                                <textarea class="form-control" id="stanswer" name="stanswer"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
                 </div>
             </React.Fragment>
         );
