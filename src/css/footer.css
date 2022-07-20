@@ -3,3 +3,14 @@ footer{
     color: white;
     padding: 20px;
 }
+
+a {
+    color: white !important;
+}
+
+.footerbar{
+    text-align: center;
+    background-color: #060b9a;
+    color: white;
+    padding: 10px;
+}
