@@ -28,11 +28,11 @@ function App() {
     case '/signup':
       component = <Signup/>
       imgSrc = "assets/images/background/background.png";
-
       break;  
 
     case '/dashboard':
-      component = <Dashboard/>
+      component = <Dashboard title="Student"/>
+      imgSrc = "assets/images/background/background.png";
       break;
 
     case '/testing':
@@ -60,7 +60,6 @@ function App() {
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           position: 'absolute',
-          top: '8vh'
       }}>
         <div className="container-fluid" style={{
           position: "relative",

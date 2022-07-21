@@ -6,7 +6,7 @@ class Home extends Component {
     render() { 
         return (
             <React.Fragment>
-                <div className='row' style={{height:"75vh"}}>
+                <div className='row' style={{height:"75vh", paddingTop:"20px"}}>
                     <div className='col-sm-1'></div>
                     <div className='col-sm-5 text-center'>
                         <img id="logo" src={process.env.PUBLIC_URL + 'assets/images/logo/enliven_logo.gif'} alt="enliven logo"/>
