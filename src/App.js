@@ -3,7 +3,9 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Testing from './pages/Testing';
 import Dashboard from './pages/Dashboard';
+import About from './pages/About';
 import Notfound from './pages/Notfound';
 
 import Header from './components/Utils/Header';
@@ -26,11 +28,20 @@ function App() {
     case '/signup':
       component = <Signup/>
       imgSrc = "assets/images/background/background.png";
-
       break;  
 
     case '/dashboard':
-      component = <Dashboard/>
+      component = <Dashboard title="Student"/>
+      imgSrc = "assets/images/background/background.png";
+      break;
+
+    case '/testing':
+      component = <Testing/>
+      break;
+
+    case '/about':
+      component = <About/>
+      imgSrc = "assets/images/background/background.png";
       break;
 
     default:
@@ -49,11 +60,10 @@ function App() {
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           position: 'absolute',
-          top: '8vh'
       }}>
         <div className="container-fluid" style={{
           position: "relative",
-          top:"15vh"
+          top: "15vh",
         }}>
           {component}
         </div>

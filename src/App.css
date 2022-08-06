@@ -74,6 +74,7 @@
 #logo{
   object-fit: cover;
   width: 20rem;
+  margin-left: -20px;
 }
 
 #intro {
@@ -86,12 +87,26 @@
   width: 45vw;
 }
 
+#edu-for-all {
+  width: 40vw;
+}
+
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
   #landing_image {
-    width: 70vw;
+    width: 40vw;
     margin-left: 3rem;
+  }
+  
+  #edu-for-all {
+    width: 60vw;
+  }
+
+  #logo{
+    object-fit: cover;
+    width: 20rem;
   }
 
 }
@@ -104,4 +119,17 @@
     margin-left: 3rem;
   }
 
+  #edu-for-all {
+    width: 80vw;
+  }
+
+  #logo{
+    object-fit: cover;
+    width: 16rem;
+  }
+
+}
+
+.wrapper{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
