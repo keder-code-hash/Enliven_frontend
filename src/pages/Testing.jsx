@@ -7,40 +7,40 @@ class Testing extends Component {
 
         return(
             <React.Fragment>
-                <div className="container" style={{height: "69vh"}}>
+                <div className="container" style={{height: "70vh", marginTop:"6rem"}}>
                 <h2>General Testing</h2><br/><br/>
                 <form method="POST" action="/testing/query">
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="form-group">
+                    <div className="row">
+                        <div className="col-8">
+                            <div className="form-group">
                                 <b>Question</b>
-                                <input type="text" class="form-control" id="question" name="question"/>
+                                <input type="text" className="form-control" id="question" name="question"/>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="form-group">
+                        <div className="col-4">
+                            <div className="form-group">
                                 <b>Marks</b>
-                                <input type="number" class="form-control" id="Marks" name="marks"/>
+                                <input type="number" className="form-control" id="Marks" name="marks"/>
                             </div>
                         </div>
                     </div>
                     <br/>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
+                    <div className="row">
+                        <div className="col-sm-6">
+                            <div className="form-group">
                                 <b>Standard Answer</b>
-                                <textarea class="form-control" id="sdanswer" name="sdanswer"></textarea>
+                                <textarea className="form-control" id="sdanswer" name="sdanswer"></textarea>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
+                        <div className="col-sm-6">
+                            <div className="form-group">
                                 <b>Student Answer</b>
-                                <textarea class="form-control" id="stanswer" name="stanswer"></textarea>
+                                <textarea className="form-control" id="stanswer" name="stanswer"></textarea>
                             </div>
                         </div>
                     </div>
                     <br/>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
                 </div>
             </React.Fragment>

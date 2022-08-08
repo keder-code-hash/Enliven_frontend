@@ -17,16 +17,16 @@ class LoginComponent extends Component {
                         formid="login-form"
                     >
                         <div className="form-group">
-                            <label for="your_name"><i className="zmdi zmdi-account material-icons-name"></i></label>
+                            <label htmlFor="your_name"><i className="zmdi zmdi-account material-icons-name"></i></label>
                             <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
                         </div>
                         <div className="form-group">
-                            <label for="your_pass"><i className="zmdi zmdi-lock"></i></label>
+                            <label htmlFor="your_pass"><i className="zmdi zmdi-lock"></i></label>
                             <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
                         </div>
                         <div className="form-group">
                             <input type="checkbox" name="remember-me" id="remember-me" className="agree-term" />
-                            <label for="remember-me" className="label-agree-term"><span><span></span></span>Remember me</label>
+                            <label htmlFor="remember-me" className="label-agree-term"><span><span></span></span>Remember me</label>
                         </div>
                         <div className="form-group form-button">
                             <input type="submit" name="signin" id="signin" className="form-submit" value="Log in"/>
