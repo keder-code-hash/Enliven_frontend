@@ -8,7 +8,7 @@ class Home extends Component {
             <React.Fragment>
             <div className="bee-page-container">
                 <div className="bee-row bee-row-1">
-                <div className="container bee-row-content">
+                <div className="container bee-row-content" style={{maxWidth: "none"}}>
                     <div className="bee-col bee-col-1 bee-col-w6">
                     <div className="bee-block bee-block-1 bee-divider bee-mobile_hide">
                     </div>
