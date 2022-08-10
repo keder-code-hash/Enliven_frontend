@@ -11,29 +11,25 @@ import Notfound from './pages/Notfound';
 
 import Header from './components/Utils/Header';
 import Footer from './components/Utils/Footer';
+import ExamPage from './components/Exam/ExamPage';
 
 function App() {
   let component;
-  let imgSrc = "";
   switch (window.location.pathname) {
     case '/':
       component = <Home/>
-      imgSrc = "assets/images/background/background.png";
       break;
     
     case '/login':
       component = <Login/>
-      imgSrc = "assets/images/background/background.png";
       break;
 
     case '/signup':
       component = <Signup/>
-      imgSrc = "assets/images/background/background.png";
       break;  
 
     case '/dashboard':
       component = <Dashboard title="Student"/>
-      imgSrc = "assets/images/background/background.png";
       break;
 
     case '/testing':
@@ -42,7 +38,10 @@ function App() {
 
     case '/about':
       component = <About/>
-      imgSrc = "assets/images/background/background.png";
+      break;
+
+    case '/exam':
+      component = <ExamPage examname="Computer Science" fullmarks="10" time="00:10:00"/>
       break;
 
     default:
