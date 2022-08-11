@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import Form from '../Utils/Form';
 
-class RegisterComponent extends Component {
-    state = {  } 
+
+// const dispatch=useDispatch() 
+
+class RegisterComponent extends Component { 
+    // state = { } 
+    handleSubmit=(event)=>{
+        event.preventDefault();
+        console.log("event.target");
+    }
     subComponent = (<><a href="#" className="signup-image-link">I am already a member</a></>)
     render() { 
         return (
@@ -15,6 +22,7 @@ class RegisterComponent extends Component {
                     title="Sign up"
                     endpoint="/"
                     formid="register-form"
+                    onSubmit={this.handleSubmit}
                 >
                     <div className="form-group">
                         <label htmlFor="name"><i className="zmdi zmdi-account material-icons-name"></i></label>
