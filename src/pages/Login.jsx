@@ -4,7 +4,11 @@ import LoginComponent from "../components/User/LoginComponent";
 class Login extends Component {
     state = {  } 
     render() { 
-        return (<LoginComponent/>);
+        return (
+            <div style={{marginTop:"5rem", marginBottom:"5rem"}}>
+                <LoginComponent/>
+            </div>
+        );
     }
 }
  

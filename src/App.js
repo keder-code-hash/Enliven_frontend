@@ -1,4 +1,5 @@
 import './App.css';
+import './css/bee.css';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -51,29 +52,8 @@ function App() {
   return (
     <>
       <Header/>
-      <div className="background" style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL + imgSrc})`,
-          aspectRatio: 960 / 540,
-          height: '100%',
-          width: '100%',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          position: 'absolute',
-      }}>
-        <div className="container-fluid" style={{
-          position: "relative",
-          top: "15vh",
-        }}>
-          {component}
-        </div>
-        <div style={{
-          position: "relative",
-          top:"15vh"
-        }}>
-          <Footer/>
-        </div>
-      </div>
+      {component}
+      <Footer/>
     </>
   );
 }
