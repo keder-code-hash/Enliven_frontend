@@ -9,6 +9,7 @@ import { getAuth } from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyBEnUTr0bqB8XRoLRBqyc8mmz9UEFcvXM0",
   authDomain: "enliven-39828.firebaseapp.com",
+  databaseURL: "https://enliven-39828-default-rtdb.firebaseio.com",
   projectId: "enliven-39828",
   storageBucket: "enliven-39828.appspot.com",
   messagingSenderId: "738443265301",
