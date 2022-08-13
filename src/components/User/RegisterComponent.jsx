@@ -6,6 +6,7 @@ import { registernewUser } from '../../redux/actions/auth-action/registerUser';
 function RegisterComponent(props) {  
     // loading the globally stored state.
     const { token, user, auth,loading, error,success } = useSelector(state => state.userred);
+
     const dispatch=useDispatch();
     const handleSubmit=(event)=>{
         event.preventDefault();
@@ -20,10 +21,10 @@ function RegisterComponent(props) {
         let usr={
             name:event.target.name.value,
             email:event.target.email.value,
-            password:event.target.value,
+            password:event.target.pass.value,
             term_policy:event.target.value
         } 
-        signUp({email:"asassad@gmail.com",password:"Keder@1234"});
+        signUp({email:usr.email,password:usr.password});
     }
     const subComponent = (<><a href="#" className="signup-image-link">I am already a member</a></>)
     return (
