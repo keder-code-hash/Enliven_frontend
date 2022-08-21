@@ -9,7 +9,6 @@ class Header extends Component {
         return (
             <>
             <Navbar/>
-            {/* <Alert/> */}
             </>
         );
     }

@@ -4,7 +4,7 @@ import { loginUser } from '../../redux/actions/auth-action/loginAction';
 import '../../css/login-register.css';
 
 function LoginComponent(props){
-    const state = {  } 
+    const { token, user, auth,loading, error,success } = useSelector(state => state.userred);
     const subComponent = (<><a href="#" className="signup-image-link">Create an account</a></>);
     const dispatch=useDispatch();
     const handleLogin=(event)=>{
@@ -12,9 +12,10 @@ function LoginComponent(props){
         const signIn = usr => {
             dispatch(loginUser(usr))
             .then(res => {
-                console.log(usr); 
+                window.location="/"
             })
             .catch(err => { 
+                alert(err);
             });
         }
         let usr={
