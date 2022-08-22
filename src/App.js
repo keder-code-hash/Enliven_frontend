@@ -45,6 +45,7 @@ function App() {
       component = <ExamPage examname="Computer Science" fullmarks="10" time="00:10:00"/>
       break;
 
+
     case '/profile':
       component = <Profile/>
       break;
