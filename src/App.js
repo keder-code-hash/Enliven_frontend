@@ -12,6 +12,7 @@ import Notfound from './pages/Notfound';
 import Header from './components/Utils/Header';
 import Footer from './components/Utils/Footer';
 import ExamPage from './components/Exam/ExamPage';
+import Profile from './components/Dashboard/ProfileComponent';
 
 function App() {
   let component;
@@ -42,6 +43,10 @@ function App() {
 
     case '/exam':
       component = <ExamPage examname="Computer Science" fullmarks="10" time="00:10:00"/>
+      break;
+
+    case '/profile':
+      component = <Profile/>
       break;
 
     default:
