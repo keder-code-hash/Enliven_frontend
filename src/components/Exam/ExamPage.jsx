@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Webcam from "react-webcam";
 import Questions from './QuestionsComponent';
 import Sidepane from './SidepaneComponent';
+import Answer from './AnswerComponent';
 
 const videoConstraints = {
     width: 1280,
@@ -14,7 +15,7 @@ class ExamPage extends Component {
     render() { 
         return (
             <div className="container" style={{marginTop:"5rem", marginBottom:"5rem"}}>
-                <div className='row'>
+                <div className='row'> 
                     <div className='col-sm-9'>
                         <h3>Exam: {this.props.examname}</h3>
                         <br/>
@@ -35,6 +36,7 @@ class ExamPage extends Component {
                 <div className='row'>
                     <div className='col-sm-9'>
                         <Questions question="What is OS?"/>
+                        <Answer/>
                     </div>
                     <div className='col-sm-3'>
                         <Sidepane qno="5" />
