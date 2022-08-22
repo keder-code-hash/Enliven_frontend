@@ -45,13 +45,9 @@ function App() {
       component = <ExamPage examname="Computer Science" fullmarks="10" time="00:10:00"/>
       break;
 
-<<<<<<< HEAD
-    case '/about':
-      component = <About/>
-=======
+
     case '/profile':
       component = <Profile/>
->>>>>>> fe819b135083388adf8c3d7007d87beda0bf6718
       break;
 
     default:

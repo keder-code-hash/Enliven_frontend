@@ -21,11 +21,10 @@ function Navbar() {
         <React.Fragment>
             <div className="hero-anime">	
                 <div className="navigation-wrap bg-light start-header start-style">
-                    <div className="container">
+                    <div className="container-fluid">
                         <div className="row">
                             <div className="col-12">
                                 <nav className="navbar navbar-expand-md navbar-light">
-                                
                                     <a className="navbar-brand" href="/" ><img src={process.env.PUBLIC_URL + "assets/images/logo/enliven_transparent_rembg.png"} alt="enliven logo" width="100px"/> </a>
                                     
                                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
