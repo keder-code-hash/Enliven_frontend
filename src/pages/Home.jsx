@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/get-started-button.css';
 
-function Home(){ 
+function Home(){
     return (
         <React.Fragment>
         <div className="bee-page-container">

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import DraftEditor from "../Utils/DraftJSEditor"
 
 export default function Answer(){
