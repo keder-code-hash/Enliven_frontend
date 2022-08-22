@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../css/navbar.css'
 import { useDispatch,useSelector } from "react-redux";
 import { logOutUser } from '../../redux/actions/auth-action/logOutAction';
- 
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 
 function Navbar() {
@@ -10,7 +10,7 @@ function Navbar() {
     const logOut = () => {
         dispatch(logOutUser())
         .then(res => {
-            window.location="/"
+            window.location="/";
         })
         .catch(err => { 
             alert(err);
@@ -51,7 +51,7 @@ function Navbar() {
                                             {isLoggedIn() 
                                                 ?
                                                 <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                                    <a className="nav-link" href="" onClick={logOut} >
+                                                    <a className="nav-link" onClick={logOut} type="button">
                                                         Logout &nbsp;
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
                                                             <path fillRule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
