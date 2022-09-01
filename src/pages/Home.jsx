@@ -15,7 +15,7 @@ function Home(){
                     </div>
                 </div>
                 <div className="bee-block bee-block-3 bee-image">
-                    <img alt="Company Logo" className="bee-fixedwidth" src={process.env.PUBLIC_URL + "assets/images/enliven_logo.gif"} style={{maxWidth: '252px'}} />
+                    <img alt="Company Logo" className="bee-fixedwidth" src={process.env.PUBLIC_URL + "assets/images/logo/enliven_logo.gif"} style={{maxWidth: '252px'}} />
                 </div>
                 <div className="bee-block bee-block-4 bee-text">
                     <div className="bee-text-content" style={{lineHeight: '150%', fontSize: '12px', color: '#393d47', fontFamily: 'inherit'}}>
