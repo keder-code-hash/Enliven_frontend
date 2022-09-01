@@ -1,10 +1,11 @@
 import React from 'react';
 
 function Testing() {
+    const backgroundImage = process.env.PUBLIC_URL + "assets/images/background/about-us.svg";
     return(
         <React.Fragment>
-            <div className="container" style={{height: "70vh", marginTop:"6rem"}}>
-            <h2>General Testing</h2><br/><br/>
+            <div className="text-center" style={{padding: "3rem", color: "white", backgroundColor: "#2026d2", marginTop:"3.8rem", backgroundImage : `url(${backgroundImage})`, backgroundRepeat : "no-repeat", backgroundSize : "cover", backgroundPositionY : "center"}}><h1>General Testing</h1></div>
+            <div className="container" style={{height: "70vh", marginTop:"5rem"}}>
             <form method="POST" action="/testing/query">
                 <div className="row">
                     <div className="col-8">
