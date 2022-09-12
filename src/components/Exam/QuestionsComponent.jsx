@@ -1,13 +1,15 @@
-import React from 'react';
- 
-function Questions(props) {
-    return (
-        <React.Fragment>
-            <strong>Q: {props.question}</strong>
-            <br/>
-            <br/>
-        </React.Fragment>
-    );
+import React from "react";
+
+function Questions({ question, questionNumber }) {
+  return (
+    <>
+      <strong>
+        {questionNumber}: {question}
+      </strong>
+      <br />
+      <br />
+    </>
+  );
 }
 
 export default Questions;
