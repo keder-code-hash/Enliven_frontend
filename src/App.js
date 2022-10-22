@@ -2,13 +2,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./css/bee.css";
 
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+import Signup from "./pages/Signup/Signup";
 import Testing from "./pages/Testing";
-import Dashboard from "./pages/Dashboard";
-import About from "./pages/About";
-import Notfound from "./pages/Notfound";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import About from "./pages/About/About";
+import Notfound from "./pages/Error/Notfound";
 
 import Header from "./components/Utils/Header";
 import Footer from "./components/Utils/Footer";
