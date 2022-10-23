@@ -40,7 +40,7 @@ function App() {
           />
           <Route path="*" element={<Notfound />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );
