@@ -1,130 +1,78 @@
 import React from "react";
 import "./home.css";
-import elogo from "../../assets/images/logo/enliven_logo.gif";
+import elogo from "../../assets/images/logo/enliven.gif";
 import homeImg from "../../assets/images/Online_test_rmbg.gif";
-import midImg from "../../assets/images/middle_Image.png";
+import midImg from "../../assets/images/exam.png";
 import searchImg from "../../assets/images/search.png";
 import findImg from "../../assets/images/find_.png";
 import find2Img from "../../assets/images/finding.png";
 import jobImg from "../../assets/images/find_new_job.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <React.Fragment>
-      <div className="bee-page-container">
-        <div className="bee-row bee-row-1">
-          <div
-            className="container bee-row-content"
-            style={{ maxWidth: "none" }}
-          >
-            <div className="bee-col bee-col-1 bee-col-w6">
-              <div className="bee-block bee-block-1 bee-divider bee-mobile_hide"></div>
-              <div className="bee-block bee-block-6 bee-divider">
-                <div className="spacer" style={{ height: "25px" }}></div>
-              </div>
-              <div className="bee-block bee-block-3 bee-image">
-                <img
-                  alt="Company Logo"
-                  className="bee-fixedwidth"
-                  src={elogo}
-                  style={{ maxWidth: "252px" }}
-                />
-              </div>
-              <div className="bee-block bee-block-4 bee-text">
-                <div
-                  className="bee-text-content"
-                  style={{
-                    lineHeight: "150%",
-                    fontSize: "12px",
-                    color: "#393d47",
-                    fontFamily: "inherit",
-                  }}
-                >
-                  <p style={{ fontSize: "14px", lineHeight: "21px" }}>
-                    <span
-                      style={{
-                        fontSize: "24px",
-                        lineHeight: "36px",
-                        color: "#ffffff",
-                      }}
-                    >
-                      Tired of checking answer sheets manually?
-                    </span>
-                  </p>
-                  <p style={{ fontSize: "14px", lineHeight: "21px" }}>
-                    <span
-                      style={{
-                        fontSize: "24px",
-                        lineHeight: "36px",
-                        color: "#ffffff",
-                      }}
-                    >
-                      Go effortless with <strong>enliven</strong>
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className="bee-block bee-block-5 bee-divider">
-                <div className="spacer" style={{ height: "0px" }}></div>
-              </div>
-              <div className="bee-block bee-block-6 bee-button">
-                <a
-                  className="bee-button-content"
-                  href="/signup"
-                  style={{
-                    fontSize: "20px",
-                    backgroundColor: "#ffffff",
-                    borderBottom: "0px solid #2026D2",
-                    borderLeft: "0px solid #2026D2",
-                    borderRadius: "30px",
-                    borderRight: "0px solid #2026D2",
-                    borderTop: "0px solid #2026D2",
-                    color: "#2026d2",
-                    direction: "ltr",
-                    fontFamily: "inherit",
-                    fontWeight: 700,
-                    maxWidth: "100%",
-                    paddingBottom: "10px",
-                    paddingLeft: "50px",
-                    paddingRight: "45px",
-                    paddingTop: "10px",
-                    width: "auto",
-                    display: "inline-block",
-                  }}
-                >
-                  <span
-                    style={{
-                      wordBreak: "break-word",
-                      fontSize: "20px",
-                      lineHeight: "200%",
-                    }}
-                  >
-                    Get Started
-                  </span>
-                </a>
-              </div>
+    <>
+      <section className="home-section">
+        <div className="container2">
+          <div className="left-col">
+            <div className="image">
+              <img src={elogo} alt="company logo" />
             </div>
-            <div className="bee-col bee-col-2 bee-col-w6">
-              <div className="bee-block bee-block-1 bee-divider">
-                <div className="spacer" style={{ height: "30px" }}></div>
-              </div>
-              <div className="bee-block bee-block-2 bee-divider bee-mobile_hide">
-                <div className="spacer" style={{ height: "30px" }}></div>
-              </div>
-              <div className="bee-block bee-block-3 bee-image">
-                <img
-                  alt="Interview Candidate"
-                  className="bee-center bee-autowidth"
-                  src={homeImg}
-                  style={{ maxWidth: "715px" }}
-                />
-              </div>
-              <div className="bee-block bee-block-4 bee-divider">
-                <div className="spacer" style={{ height: "30px" }}></div>
-              </div>
+            <div className="text-content">
+              <p>Tired of checking answer sheets manually?</p>
+              <p>
+                Go effortless with <spna className="name">enliven</spna>
+              </p>
+            </div>
+            <div className="btn-light-border">
+              <Link to="/" className="btn-text">
+                Get Started
+              </Link>
+            </div>
+          </div>
+          <div className="right-col">
+            <img alt="Interview Candidate" src={homeImg} />
+          </div>
+        </div>
+      </section>
+      <section className="about-section">
+        <div className="container2">
+          <div className="col-left">
+            <img src={midImg} alt="Exam" />
+          </div>
+          <div className="col-right">
+            <h1>What Do we Do</h1>
+            <p>
+              <span>
+                Enliven is a <strong>Smart Assessment System</strong>, capable
+                of automatically <strong> assesssing Multiple Choice</strong>{" "}
+                and{" "}
+                <strong>
+                  <span>Short Answer</span>
+                </strong>{" "}
+                type questions. Enliven brings a new era of online examinations
+                by
+              </span>
+              <br />
+              <span>
+                providing a scope of versatile questions and
+                <strong> cutting off</strong> the
+              </span>
+              <br />
+              <span>
+                tedious <strong>workload</strong> from the assessor.
+              </span>
+            </p>
+            <div className="btn-solid-border">
+              <Link to="/" className="btn-solid">
+                Give it a try
+              </Link>
             </div>
           </div>
         </div>
+      </section>
+      {/* <div className="bee-page-container">
+                 
         <div className="bee-row bee-row-2">
           <div className="bee-row-content">
             <div className="bee-col bee-col-1 bee-col-w12">
@@ -557,8 +505,8 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-    </React.Fragment>
+      </div> */}
+    </>
   );
 }
 

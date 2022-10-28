@@ -1,71 +1,217 @@
-/* CSS */
-.get-started {
-    align-items: center;
-    appearance: none;
-    background-color: #fff;
-    border-radius: 24px;
-    border-style: none;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-    box-sizing: border-box;
-    color: #3c4043;
-    cursor: pointer;
-    display: inline-flex;
-    fill: currentcolor;
-    font-family: "Google Sans",Roboto,Arial,sans-serif;
-    font-size: 14px;
+section{
+    overflow: hidden;
+      background: #f0ededd5;
+}
+/* home section */
+.home-section{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+.container2{
+  width: 90%;
+  margin: 40px 40px 20px 40px;  
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+}
+.home-section .container2{
+  height: 90%;
+  justify-content: space-between;  
+  background: linear-gradient(90deg, rgba(0, 33, 71, 1) 0%, rgba(14, 32, 173, 1) 100%);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+  
+}
+.left-col{
+  width: 70%;
+  height: 90%;
+  margin: 20px;
+  padding: 30px;
+
+}
+
+.image img{
+  width: 40%;
+  height: auto;
+}
+.text-content{
+  margin-top: 50px;
+  color: white;
+}
+.text-content>p:nth-child(1){
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+.text-content>p:nth-child(2){
+  font-size: 30px;
+}
+.name{
+  font-size: 40px;
+  font-weight: 600;
+}
+.btn-light-border{
+  background: transparent;
+  width: 25%;
+  text-align: center;
+  margin-top: 30px;
+  border: 1px solid rgba(228, 228, 99, 0.993);
+  padding: 10px;
+  border-radius: 2px;
+  transition: all 200ms ease-in;
+}
+.btn-light-border:hover{
+  background: rgba(228, 228, 99, 0.993);
+
+}
+.btn-light-border:hover>.btn-text{
+  color: black;
+}
+.btn-light-border .btn-text{
+  text-decoration: none;
+  color: rgba(228, 228, 99, 0.993);
+  font-size: 20px;
+}
+.right-col{
+  width: 50%;
+  /* position: relative; */
+}
+.right-col>img{
+  position: absolute;
+  bottom: -40px;
+  right: 70px;
+  width: 40%;
+  height: 90%;
+}
+/* responsive design */
+@media (max-width: 961px){
+  .home-section .container2{
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block;
+  }
+
+  .left-col{
+    width: 100%;
+    
+  }
+  .right-col>img{
+    display: none;
+  }
+
+}
+@media (max-width: 460px){
+  .home-section{
+    height: 80vh;
+  }
+  .left-col{
+    padding: 25px;
+    margin: 5px;
+  }
+    .image img {
+      width: 60%;
+      
+    }
+  .text-content {
+      margin-top: 30px;
+          }
+  .text-content>p:nth-child(1) {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .text-content>p:nth-child(2) {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .name {
+    font-size: 25px;
     font-weight: 500;
-    height: 48px;
-    justify-content: center;
-    letter-spacing: .25px;
-    line-height: normal;
-    max-width: 100%;
-    overflow: visible;
-    padding: 2px 24px;
-    position: relative;
-    text-align: center;
-    text-transform: none;
-    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: auto;
-    will-change: transform,opacity;
-    z-index: 0;
   }
+    .btn-light-border .btn-text{
+      font-size: 15px;
+    }
+        .btn-light-border{
+          width: 40%;
+        }
   
-  .get-started:hover {
-    background: #F6F9FE;
-    color: #174ea6;
-    transform: translateY(-3px);
-    transition: .3s ease;
-  }
+}
+/* about section */
+.about-section{
+  display: flex;
+  justify-content: center;
+}
+.about-section .container2{
+  margin-top: 100px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-left{
+  width:50%;
+  padding-right: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-left>img{
+  border: none;
+  outline: none;
+  max-width: 85%;
+  vertical-align: middle;
   
-  .get-started:active {
-    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
-    outline: none;
+}
+.col-right{
+  padding: 50px 15px 10px 15px;
+  width: 50%;
+  height: 100%;
+}
+.col-right>h1{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.col-right>p>span{
+  font-size: 20px;
+  color: #333;
+}
+.btn-solid-border{
+  width: fit-content;
+  background: rgb(248, 228, 8);
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 15px;
+}
+.btn-solid{
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+.btn-solid:hover{
+  text-decoration: none;
+  color: white;
+}
+/* responsive design */
+@media (max-width: 961px){
+  .about-section .container2{
+    margin-top: 50px;
+    flex-direction: column;
   }
-  
-  .get-started:focus {
-    outline: none;
-    border: 2px solid #4285f4;
+  .col-left{
+    width: 100%;
   }
-  
-  .get-started:not(:disabled) {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  .col-right{
+    width: 100%;
   }
-  
-  .get-started:not(:disabled):hover {
-    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+
+}
+@media (max-width: 400px){
+  .col-right>h1{
+    font-size: 20px;
+
   }
-  
-  .get-started:not(:disabled):focus {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-  }
-  
-  .get-started:not(:disabled):active {
-    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
-  }
-  
-  .get-started:disabled {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
-  }
+    .col-right>p>span{
+      font-size: 15px;
+    }
+
+}
