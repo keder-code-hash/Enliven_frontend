@@ -9,7 +9,7 @@
         height: 75px;
         width: 100%;
         justify-content: center;
-        background: rgb(223, 221, 221);
+        background: #f9f9f9;
          z-index: 99999;
         transition: all 0.4s ease;
 }
@@ -60,14 +60,14 @@
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: blue;
+    background-color: rgba(14, 32, 173, 1);
     display: block;
     margin:1px auto;
     transition: all 0.3s ease;
 }
 .nav-links:hover{
     text-decoration: none;
-    color: blue;
+    color: rgba(14, 32, 173, 1);
 }
 .nav-links:hover::after{
     width: 100%;
