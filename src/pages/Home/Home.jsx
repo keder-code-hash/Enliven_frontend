@@ -21,7 +21,7 @@ function Home() {
             <div className="text-content">
               <p>Tired of checking answer sheets manually?</p>
               <p>
-                Go effortless with <spna className="name">enliven</spna>
+                Go effortless with <span className="name">enliven</span>
               </p>
             </div>
             <div className="btn-light-border">
